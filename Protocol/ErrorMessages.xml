@@ -9745,6 +9745,28 @@
 							</ErrorMessage>
 						</ErrorMessages>
 					</Check>
+					<Check id="76">
+						<Name namespace="Protocol.Params.Param.Display.Decimals">CheckDecimalsTag</Name>
+						<ErrorMessages>
+							<ErrorMessage id="1">
+								<Name>InvalidTagForTime</Name>
+								<GroupDescription />
+								<Description templateId="10000">
+									<InputParameters>
+										<InputParameter id="0" value="Display/Decimals">tagName</InputParameter>
+									</InputParameters>
+								</Description>
+								<Severity>Major</Severity>
+								<Certainty>Certain</Certainty>
+								<Source>Validator</Source>
+								<FixImpact>NonBreaking</FixImpact>
+								<HasCodeFix>False</HasCodeFix>
+								<HowToFix><![CDATA[Delete a Protocol/Params/Param/Display/Decimal tag]]></HowToFix>
+								<ExampleCode><![CDATA[<Display>[NewLine]   <RTDisplay>true</RTDisplay>[NewLine]</Display>[NewLine]<Measurement>[NewLine]   <Type options="time">number</Type>[NewLine]</Measurement>[NewLine]]]></ExampleCode>
+								<Details><![CDATA[Parameters containing time values must have no decimals to be correct.]]></Details>
+							</ErrorMessage>
+						</ErrorMessages>
+					</Check>
 				</Checks>
 			</Category>
 			<Category id="3">
